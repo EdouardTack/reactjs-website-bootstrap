@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
+function Application() {
     const [count, setCount] = useState(0);
+    console.log(import.meta.env.VITE_SOME_KEY) // 123
+    console.log(import.meta.env.VITE_SOME_TEST) // truc
+    console.log(import.meta.env) // undefined
 
     return (
         <>
@@ -28,4 +31,4 @@ function App() {
     );
 }
 
-export default App;
+export default Application;
